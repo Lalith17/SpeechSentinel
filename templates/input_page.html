@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='input_css.css')}}">
+</head>
+<body>
+    <header>
+        <h1>WEBSITE</h1>
+        <nav>
+          <ul>
+            <li><a href="{{url_for('index1')}}">Home</a></li>
+            <li><a href="{{url_for('index1')}}">Contact Us</a></li>
+            <li><a href="{{url_for('index1')}}">About Us</a></li>
+            <li><a href="{{url_for('index1')}}" class="back"><button>Back</button></a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>HATE SPEECH DETECTOR!!</h1>
+        <form action="/analyze" method="post">
+        <input id="text1" name="text1"type="text" placeholder="Enter the text" />
+        <input type="submit" value="Analyze">
+        <div id="result">{{result}}</div>
+      </form>
+    </main>
+</body>
+</html>

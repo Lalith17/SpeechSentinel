@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Kulim+Park:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic);@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);@import url(https://fonts.googleapis.com/css?family=Taviraj:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-family: taviraj;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-align: left;
+    color: #000000;
+
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Main Content Styles */
+  main {
+    text-align: center;
+    padding: 50px;
+    display:flex;
+    flex-direction:roe;
+  }
+  
+   main h1 {
+    
+    color: #008080;
+    margin-bottom: 10px;
+    font-family: Taviraj;
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-align: left;
+ 
+  }
+  
+  main p {
+    color: #333;
+    margin-bottom: 30px;
+    font-family: inter;
+    font-size: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: Taviraj;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    text-align: left;
+
+
+  }
+
+  img{
+    width: 488px;
+    height: 488px;
+    margin-left:400px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logo,
+  .address,
+  .contact {
+    text-align: left;
+    font-family: taviraj;
+
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-family: Taviraj;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40.94px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  
+  .address p,
+  .contact p {
+    margin: 5px 0;
+  }
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  main {
+    padding: 30px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  
+  main h1 {
+    font-size: 32px;
+  }
+  
+  main p {
+    font-size: 24px;
+  }
+  
+  button {
+    font-size: 20px;
+  }
+
+  img{
+    display:none;
+  }
+}
